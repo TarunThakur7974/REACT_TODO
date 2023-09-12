@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Merriweather&family=Montserrat:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Rajdhani:wght@300&family=Roboto:wght@300&family=Signika+Negative&family=Tilt+Neon&family=Ubuntu:wght@300;400&display=swap');
+
+html {
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+}
+
+* {
+    /* border: 2px solid red; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: rgb(6, 6, 26);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+nav h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.mainCountainer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 12px;
+    font-size: 1.2rem;
+}
+
+.form button {
+    cursor: pointer;
+    width: 50%;
+    padding: 5px;
+    font-size: 1.3rem;
+    background-color: rgb(6, 6, 26);
+    color: white;
+}
+
+.form button:hover {
+    background-color: rgb(27, 27, 95);
+}
+
+.dataDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list {
+    font-size: 1rem;
+}
+
+.list p {
+    padding: 0px 20px;
+    text-align: start;
+}
+
+.list {
+    border: 2px solid black;
+    width: 45%;
+    border-radius: 9px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px auto
+}
+
+i {
+    cursor: pointer;
+}
+
+.check i {
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgb(16, 16, 58);
+}
+
+.check {
+    height: 20px;
+    width: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+
+.selector * {
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0px 10px;
+    background-color: rgb(6, 6, 26);
+    color: white;
+}
+
+.selector * {
+    text-decoration: none;
+}
+
+.selector *:hover {
+    cursor: pointer;
+    /* background-color: rgb(27, 27, 95); */
+    text-decoration: underline white;
+}
+
+.selector {
+    margin: 10px;
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.box:active {
+    background-color: black;
+}
+
+@media (max-width:700px) {
+    html {
+        font-size: 14px;
+    }
+
+    .list * {
+        margin: 2px auto;
+    }
+
+    .list {
+        width: 70%;
+    }
+
+    .selector {
+        width: 70%;
+    }
+
+    .list p {
+        padding: 0px 10px;
+    }
+
+    .form input {
+        width: 80%;
+        padding: 5px 12px;
+    }
+
+    .form button {
+        width: 80%;
+        padding: 2px;
+    }
+}
+
+@media (max-width:450px) {
+    .selector {
+        width: 90%;
+    }
+
+    .list {
+        padding: 5px;
+        width: 85%;
+    }
+
+    .form * {
+        width: 90%;
+    }
+}
