@@ -16,7 +16,7 @@ const All = ({ todo, deleteTodo, manageCheck }) => {
     return (
         <>
             <ul className="dataDiv">
-            {todo.length === 0 ? <><h1 style={{marginTop:"50px"}}>There is no  TODO</h1></> :
+            {todo.length === 0 ? <><h1 id='h' style={{marginTop:"50px"}}>There is no  TODO</h1></> :
             todo.map((elemValue) => (
                     <Items iTag={elemValue.bool ? <i className="fa-solid fa-check"></i> : ""} key={elemValue.id} elemValue={elemValue.text} senddata={() => { senddata(elemValue) }} todo={todo} deleteTodo={() => handleClick(elemValue.id)} />
                 ))}

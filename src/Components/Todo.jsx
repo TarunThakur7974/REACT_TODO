@@ -40,7 +40,7 @@ const Todo = () => {
     setTodo([...todo, { id: crypto.randomUUID(), text: value, bool: false }]);
     setValue('')
     setData(todo);
-    console.log(data , "ima data")
+    // console.log(data , "ima data")
   }
 
 

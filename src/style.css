@@ -181,6 +181,9 @@ i {
 }
 
 @media (max-width:450px) {
+    #h{
+        font-size:1.7rem;
+    }
     .selector {
         width: 90%;
     }
